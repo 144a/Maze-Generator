@@ -1,6 +1,6 @@
 
 // Dimension of Maze
-int n = 10;
+int n = 40;
 
 // Scale of maze
 int scale = 10;
@@ -84,7 +84,7 @@ void keyPressed() {
 
 // Main Loop
 void draw() {
-  if(isSolving == false) {
+  
     drawPoint(curX, curY, -1);
     drawPoint(curX, curY, curD);
     // Grab most recent point from the Stack until we find a location we haven't visited yet
@@ -133,5 +133,5 @@ void draw() {
     if(xstack.size() == 0) {
       println("Done Generating Maze");
     }
-  } 
+  
 }
